@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8">
+  <title>Шүүхийн баримт нууцлах систем</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      font-family: sans-serif;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      background-size: cover;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.8);  /* Гэрэлтэй мөн хөнгөн өнгөтэй болох */
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+      text-align: center;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    input[type="file"] {
+      margin-bottom: 20px;
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #198754;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #155d27;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>📄 Иргэний хувийн мэдээлэл нууцлах</h1>
+    <form id="uploadForm" enctype="multipart/form-data" method="post" action="/upload">
+      <input type="file" name="file" accept=".docx" required>
+      <button type="submit">НУУЦЛАХ</button>
+    </form>
+  </div>
+</body>
+</html>
