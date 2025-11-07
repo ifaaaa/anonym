@@ -1,0 +1,62 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: sans-serif;
+  background-image: url('/static/co.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto; /* Show image in original size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  width: 110%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+  
+  input[type="file"] {
+    margin-bottom: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  button {
+    background-color: #198754;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #155d27;
+  }
+
+  .form-container {
+    background: rgba(255, 255, 255, 0.9); /* Optional: for better readability */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%; /* responsive width */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
